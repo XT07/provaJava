@@ -27,6 +27,8 @@ public class sisteminha {
                         String departamento = scanner.next();
                         Professor professor = new Professor(idProfessor, nome, departamento);
                         professores.add(professor);
+
+                        menu();
                     }catch(Exception e){
                         System.out.println("Coloque todas as informação válida | ERR " + e);
                     }
@@ -45,6 +47,8 @@ public class sisteminha {
                         int professorId = scanner.nextInt();
                         Curso curso = new Curso(idCurso, nome, cargaHoraria, professorId);
                         cursos.add(curso);
+
+                        menu();
                     }catch(Exception e){
                         System.out.println("Coloque todas as informação válida | ERR " + e);
                     }
@@ -65,6 +69,8 @@ public class sisteminha {
                         int cursoId = scanner.nextInt();
                         Aluno aluno = new Aluno(idAluno, nome, dtNsc, cpf, cursoId);
                         alunos.add(aluno);
+
+                        menu();
                     }catch(Exception e){
                         System.out.println("Coloque todas as informação válida | ERR " + e);
                     }
