@@ -2,11 +2,11 @@ public class Curso {
     //Atributos do curso
     int id;
     String nome;
-    int cargaHoraria;
+    String cargaHoraria;
     int idProfessor;
 
     //Construtor
-    public Curso(int id, String nome, int cargaHoraria, int idProfessor){
+    public Curso(int id, String nome, String cargaHoraria, int idProfessor){
         this.id = id;
         this.nome = nome;
         this.cargaHoraria = cargaHoraria;
@@ -19,5 +19,13 @@ public class Curso {
         System.out.println("Nome: " + this.nome);
         System.out.println("Carga horária: " + this.cargaHoraria);
         System.out.println("ID professor: " + this.idProfessor);
+    }
+
+    public int pegarIdProfessor(){
+        return this.idProfessor;
+    }
+
+    public int pegarId(){
+        return this.id;
     }
 }

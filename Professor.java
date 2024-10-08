@@ -17,4 +17,12 @@ public class Professor {
         System.out.println("Nome: " + this.nome);
         System.out.println("Departamento: " + this.departamento);
     }
+
+    public int pegarId(){
+        return this.id;
+    }
+
+    public String mostrarNome(){
+        return this.nome;
+    }
 }
